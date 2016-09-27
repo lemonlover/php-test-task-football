@@ -42,7 +42,7 @@ class Parser{
       $new_file_name = $source_file[0].".html";
       $result_file = fopen("result/".$new_file_name, "w");
       fwrite($result_file,$view);     fclose($result_file);   
-      echo '< atarget="_blank"  href="result/'.$new_file_name.'">'.$new_file_name.'</a><br>'; 
+      echo '<a target="_blank" href="result/'.$new_file_name.'">'.$new_file_name.'</a><br>'; 
     }
 
     public function dump($obj){
